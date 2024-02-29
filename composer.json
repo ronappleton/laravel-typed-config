@@ -1,0 +1,36 @@
+{
+    "name": "ronappleton/laravel-typed-config",
+    "description": "PHP Stan compliant config helper for Laravel, use config without stan complaining!",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Appleton\\TypedConfig\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ron Appleton",
+            "email": "ron.appleton@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "8.*",
+        "laravel/framework": "10.*",
+        "laravel/pint": "^1.14",
+        "larastan/larastan": "^2.9"
+    },
+    "extra": {
+        "laravel": {
+            "aliases": [
+                "Appleton\\TypedConfig\\Facades\\TypedConfig"
+            ]
+        }
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint",
+        "test": "vendor/bin/phpunit",
+        "stan": "vendor/bin/phpstan analyse"
+    }
+}
