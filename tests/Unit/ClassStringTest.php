@@ -38,4 +38,10 @@ class ClassStringTest extends TestCase
         $this->expectException(InvalidType::class);
         Config::classString('some.config.key');
     }
+
+    public function testUsageWithRepository(): void
+    {
+        $this->setConfig('some.config.key', TypedConfig::class);
+        $this->assertEquals(TypedConfig::class, config()->classString('some.config.key'));
+    }
 }

@@ -40,3 +40,13 @@ TypedConfig::classString(string $key, string $default = null): string
 ```
 
 Note: `classString` is a special case, it will also check the class exists.
+
+Also `Repository` macros have been added to allow the use through the config helper
+
+```php
+config()->string('key', 'default')
+
+config()->int('key', 1)
+```
+
+for example.

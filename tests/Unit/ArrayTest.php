@@ -27,4 +27,10 @@ class ArrayTest extends TestCase
         $this->expectException(InvalidType::class);
         Config::array('some.config.key');
     }
+
+    public function testUsageWithRepository(): void
+    {
+        $this->setConfig('some.config.key', ['foo' => 'bar']);
+        $this->assertEquals(['foo' => 'bar'], config()->array('some.config.key'));
+    }
 }

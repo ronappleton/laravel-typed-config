@@ -6,6 +6,7 @@ namespace Tests\Unit;
 
 use Appleton\TypedConfig\Exceptions\InvalidType;
 use Appleton\TypedConfig\Facades\TypedConfig as Config;
+use Appleton\TypedConfig\TypedConfig;
 use Tests\TestCase;
 
 class FloatTest extends TestCase
@@ -26,5 +27,11 @@ class FloatTest extends TestCase
         $this->setConfig('some.config.key', true);
         $this->expectException(InvalidType::class);
         Config::float('some.config.key');
+    }
+
+    public function testUsageWithRepository(): void
+    {
+        $this->setConfig('some.config.key', 1.5);
+        $this->assertEquals(1.5, config()->float('some.config.key'));
     }
 }

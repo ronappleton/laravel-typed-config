@@ -27,4 +27,10 @@ class BoolTest extends TestCase
         $this->expectException(InvalidType::class);
         Config::bool('some.config.key');
     }
+
+    public function testUsageWithRepository(): void
+    {
+        $this->setConfig('some.config.key', true);
+        $this->assertTrue(config()->bool('some.config.key'));
+    }
 }
