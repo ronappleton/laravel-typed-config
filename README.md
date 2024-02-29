@@ -36,7 +36,7 @@ TypedConfig::float(string $key, float $default = null): float
 
 TypedConfig::object(string $key, object $default = null): object
 
-TypedConfig::classString(string $key, string $default): string
+TypedConfig::classString(string $key, string $default = null): string
 ```
 
 Note: `classString` is a special case, it will also check the class exists.
