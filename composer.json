@@ -23,6 +23,9 @@
     },
     "extra": {
         "laravel": {
+            "providers": [
+                "Appleton\\TypedConfig\\ServiceProvider"
+            ],
             "aliases": [
                 "Appleton\\TypedConfig\\Facades\\TypedConfig"
             ]
