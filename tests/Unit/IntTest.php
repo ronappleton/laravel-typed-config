@@ -6,7 +6,6 @@ namespace Unit;
 
 use Appleton\TypedConfig\Exceptions\InvalidType;
 use Appleton\TypedConfig\Facades\TypedConfig as Config;
-use Appleton\TypedConfig\TypedConfig;
 use Tests\TestCase;
 
 class IntTest extends TestCase

@@ -6,7 +6,6 @@ namespace Tests\Unit;
 
 use Appleton\TypedConfig\Exceptions\InvalidType;
 use Appleton\TypedConfig\Facades\TypedConfig as Config;
-use Appleton\TypedConfig\TypedConfig;
 use stdClass;
 use Tests\TestCase;
 

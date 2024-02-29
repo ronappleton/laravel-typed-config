@@ -6,7 +6,6 @@ namespace Tests\Unit;
 
 use Appleton\TypedConfig\Exceptions\InvalidType;
 use Appleton\TypedConfig\Facades\TypedConfig as Config;
-use Appleton\TypedConfig\TypedConfig;
 use Tests\TestCase;
 
 class StringTest extends TestCase
@@ -28,6 +27,7 @@ class StringTest extends TestCase
         $this->expectException(InvalidType::class);
         Config::string('some.config.key');
     }
+
     public function testUsageWithRepository(): void
     {
         $this->setConfig('some.config.key', 'apple');
