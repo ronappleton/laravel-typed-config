@@ -2,6 +2,12 @@
 
 # Laravel Typed Config
 
+## Deprecated
+
+I have archived this repository, what I didn't know was that 4 days before I produced this package, the Laravel team had just added this functionality to the illuminate config repository class.
+
+[See the commit](https://github.com/laravel/framework/commit/6802941843ffefec6054ed37450b2a53ade72f64)
+
 ### Overview
 
 Super simple package, with a super simple job.
