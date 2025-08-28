@@ -2,9 +2,9 @@
 
 # Laravel Typed Config
 
-## Deprecated
+## Note
 
-I have archived this repository, what I didn't know was that 4 days before I produced this package, the Laravel team had just added this functionality to the illuminate config repository class.
+The Laravel team added this for version 11. So this should only be used for versions prior to 11
 
 [See the commit](https://github.com/laravel/framework/commit/6802941843ffefec6054ed37450b2a53ade72f64)
 
